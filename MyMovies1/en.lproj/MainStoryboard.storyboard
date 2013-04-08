@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--My Movies1 View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="MyMovies1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDK-uP-eJx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="4AG-WN-JlK"/>
+                                    <constraint firstAttribute="width" constant="140" id="Zj4-Wy-ANi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Button" image="image1.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="60k-km-XZJ" kind="modal" id="9lK-FB-gqz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MyMovies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZJ-QJ-TDw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="fXk-P9-l01"/>
+                                    <constraint firstAttribute="height" constant="45" id="w8A-ow-ifz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eDK-uP-eJx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="PWJ-JJ-kEr"/>
+                            <constraint firstItem="SZJ-QJ-TDw" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="227" id="Rf3-44-9OQ"/>
+                            <constraint firstItem="SZJ-QJ-TDw" firstAttribute="top" secondItem="3" secondAttribute="top" constant="5" id="gR4-e1-Sor"/>
+                            <constraint firstItem="eDK-uP-eJx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="m58-bC-uK1"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-812" y="-1368"/>
+        </scene>
+        <!--Trailer1 View Controller-->
+        <scene sceneID="F0T-vW-4Rn">
+            <objects>
+                <viewController id="60k-km-XZJ" customClass="Trailer1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZ1-f0-NMJ">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-qb-195">
+                                <items>
+                                    <navigationItem title="What About Bob?" id="PfF-Nm-oup">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="Wss-8F-BnW">
+                                            <connections>
+                                                <segue destination="2" kind="modal" id="nsa-Us-GNE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AKR-qb-195" firstAttribute="top" secondItem="zZ1-f0-NMJ" secondAttribute="top" type="default" id="OUX-kj-Dud"/>
+                            <constraint firstItem="AKR-qb-195" firstAttribute="trailing" secondItem="zZ1-f0-NMJ" secondAttribute="trailing" type="default" id="RmS-L1-bEl"/>
+                            <constraint firstItem="AKR-qb-195" firstAttribute="leading" secondItem="zZ1-f0-NMJ" secondAttribute="leading" type="default" id="tDy-Sa-uub"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="view" destination="zZ1-f0-NMJ" id="6JR-De-ork"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBH-f9-DSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="-946"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1.png" width="342" height="477"/>
+    </resources>
+    <classes>
+        <class className="MyMovies1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyMovies1ViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="Trailer1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Trailer1ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
