@@ -45,6 +45,7 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jn6-rD-Yok"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -66,9 +67,9 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-qb-195">
                                 <items>
                                     <navigationItem title="What About Bob?" id="PfF-Nm-oup">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="Wss-8F-BnW">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Wss-8F-BnW">
                                             <connections>
-                                                <segue destination="2" kind="modal" id="nsa-Us-GNE"/>
+                                                <segue destination="2" kind="modal" id="ohK-vx-gf6"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -92,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBH-f9-DSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807" y="-946"/>
+            <point key="canvasLocation" x="-812" y="-764"/>
         </scene>
     </scenes>
     <resources>
@@ -107,6 +108,9 @@
         </class>
         <class className="Trailer1ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Trailer1ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnBack:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

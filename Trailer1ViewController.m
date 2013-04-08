@@ -9,13 +9,12 @@
 #import "Trailer1ViewController.h"
 
 
-
 @implementation Trailer1ViewController
-
 
 
 - (void)viewDidLoad
 {
+    //Change to match you video filename
     NSString *url = [[NSBundle mainBundle]
                      pathForResource:@"movie1"
                      ofType:@"mp4"];
@@ -56,9 +55,8 @@
     }
 - (void)viewDidUnload
 {
+
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -78,6 +76,8 @@
 
 - (void)viewDidDisappear:(BOOL)animated
 {
+     //Stop Player when goback
+       [player stop];
 	[super viewDidDisappear:animated];
 }
 
@@ -87,5 +87,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
