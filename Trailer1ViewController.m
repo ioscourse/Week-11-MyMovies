@@ -77,7 +77,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
      //Stop Player when goback
-       [player stop];
+    //   [player stop];
 	[super viewDidDisappear:animated];
 }
 
